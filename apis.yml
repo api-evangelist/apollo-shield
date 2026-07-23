@@ -1,8 +1,28 @@
 aid: apollo-shield
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/apollo-shield.png
 name: Apollo Shield
-description: 'Apollo Shield is a company surfaced as a portfolio company of partech and added to the API
-  Evangelist network as a stub for enrichment. Sector: Infrastructure SaaS. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'ApolloShield develops counter-drone (counter-UAS / cUAS) systems that detect, classify, and
+  neutralize unauthorized aerial threats. Its product suite spans RF detection sensors (omnidirectional
+  Omni RF Sensor up to 1.5 km and directional sensors 2-5 km with triangulation), active-defense jammers
+  (portable RF Gun under 4 kg, stationary, mobile, and vehicle-mounted RF Jammers), the integrated RF
+  Sense&Block system, a CUAS vehicle, and a centralized Command Center that manages sensors and issues
+  real-time alerts via SMS, email, and API. The platform uses AI-assisted RF fingerprinting to identify
+  drone communications and can force unauthorized drones to return home. Command Center runs on-premise or
+  cloud-based. Note: jammers cannot be sold in the United States except to federal government entities and
+  require regulatory compliance in other jurisdictions. ApolloShield exposes no public developer API,
+  documentation, SDK, or portal today; the only programmatic surface referenced is outbound Command Center
+  alert delivery. Surfaced as a portfolio company of Partech.'
 url: https://raw.githubusercontent.com/api-evangelist/apollo-shield/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -15,7 +35,13 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
-- Infrastructure Saas
+- Counter-Drone
+- Counter-UAS
+- Drone Detection
+- Airspace Security
+- Physical Security
+- Defense Technology
+- RF Sensors
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/apollo-shield-domain-security.yml
 - type: Website
   url: https://www.apolloshield.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
